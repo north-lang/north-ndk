@@ -16,4 +16,16 @@
 
 <br></br>
 
-The skill 
+The skill of coding in various programming languages is quiet essential to understand the today's world. In order to promote this important component, in my final school project I designed a programming language that enables a high-quality web app to be created from a simple code snippet. This means that no previous knowledge is required when using the North programming language. 
+
+The <a href="">technical documentation</a> clearly explains how to program with North. It also explains how to install and configure the language. It also contains a glossary that explains all the complicated technical terms.
+
+The expected use case for North would be frontend development (Web). With this goal, it equips (but not limited to) the following features:
+
+- thread/channel mechanism powered by JavaScripts's threads
+- Builtin database library (encrypted FireBase)
+- JSON support
+- Crossplaform: MacOS, Windows 10, Linux, 
+- Effective web-apps that are written as fast as nothing else.
+
+> Note: North is just a school project. I might work in the future on this project to support better releases than yet.
