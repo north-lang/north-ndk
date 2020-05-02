@@ -29,3 +29,32 @@ The expected use case for North would be frontend development (Web). With this g
 - Effective web-apps that are written as fast as nothing else.
 
 > Note: North is just a school project. I might work in the future on this project to support better releases than yet.
+
+## Maintainers
+
+- @timo-cmd
+
+## Designer
+- [timo sarkar](https://github.com/timo-cmd)
+
+
+### Powered by
+
+* JSON [Reference site](https://www.json.org/json-en.html)
+
+#### Supported by 
+
+[![JetBrains](https://d3nmt5vlzunoa1.cloudfront.net/wp-content/uploads/2015/12/JetBrains_Drive_to_develop.png)](https://www.jetbrains.com/?_ga=2.85138393.1173362852.1588427081-1506939487.1580310207)
+
+**Supporting North by sending your first Pull Request! See [contribution guideline]()**
+
+
+## References
+
+The followings are the essential resources to create North; I highly recommend you to check them first if you'd be interested in building your own languages:
+
+- [Write An Interpreter In Go by Thorsten Ball](https://interpreterbook.com)
+- [Crafting interpreter by Bob Nystrom](https://craftinginterpreters.com/)
+- [Compiler construction by Niklaus Wirth](https://inf.ethz.ch/personal/wirth/CompilerConstruction/index.html)
+
+
