@@ -12,8 +12,7 @@
   
 </div>
 
-<br>
+<em>A programming language for everybody</em>
+<br></br>
 
-
-
-The main development kit for working on projects using the north-language. Final school project submission.
+Die
