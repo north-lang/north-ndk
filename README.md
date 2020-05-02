@@ -10,9 +10,10 @@
 ![](https://img.shields.io/badge/language-north-blueviolet)
 ![](https://img.shields.io/badge/86-ScoreMe-ff69b4)
   
+  <em>A programming language for everybody</em>
+
 </div>
 
-<em>A programming language for everybody</em>
 <br></br>
 
-Die
+The skill 
