@@ -1,0 +1,46 @@
+version: 2
+
+jobs:
+  build:
+    branches:
+      ignore:
+        - gh-pages
+  
+    working_directory: ~/north-react
+
+    docker:
+      - image: circleci/node:10-stretch-browsers
+
+    steps:
+      - run: echo 127.0.0.1 node.dev | sudo tee -a /etc/hosts
+
+      - checkout
+      - restore_cache:
+          keys:
+          - dependencies-{{ checksum "package.json" }}
+          - dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: dependencies-{{ checksum "package.json" }}
+
+      - run: git clone https://github.com/north-lang/north-ndk/north ../north
+      - restore_cache:
+          keys:
+          - north-dependencies-{{ checksum "package.json" }}
+          - north-dependencies-
+      - run: cd ../north && yarn install && yarn compile && yarn link
+      - save_cache:
+          paths:
+            - ../mson/node_modules
+          key: mson-dependencies-{{ checksum "package.json" }}
+      - run: yarn link north
+
+      # - run: yarn setup
+      - run: CI=true yarn test
+
+      # Check bundle size
+      - run: yarn build && ./scripts/bundle-size.sh
+
+      - run: yarn compile
