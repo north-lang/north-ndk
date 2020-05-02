@@ -20,6 +20,10 @@ The skill of coding in various programming languages is quiet essential to under
 
 The <a href="">technical documentation</a> clearly explains how to program with North. It also explains how to install and configure the language. It also contains a glossary that explains all the complicated technical terms.
 
+> Note: This is a pre-alpha version but it seems to be pretty stable for production readyness.
+
+> Note: See <a href="https://github.com/north-lang/north-ndk/blob/master/CHANGELOG/CHANGELOG.md">CHANGELOG</a> to figure out what has changed since the last update. 
+
 The expected use case for North would be frontend development (Web). With this goal, it equips (but not limited to) the following features:
 
 - thread/channel mechanism powered by JavaScripts's threads
