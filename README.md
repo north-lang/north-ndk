@@ -14,7 +14,7 @@
 
 </div>
 
-<br></br>
+<br>
 
 The skill of coding in various programming languages is quiet essential to understand the today's world. In order to promote this important component, in my final school project I designed a programming language that enables a high-quality web app to be created from a simple code snippet. This means that no previous knowledge is required when using the North programming language. 
 
