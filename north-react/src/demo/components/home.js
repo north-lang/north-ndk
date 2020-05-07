@@ -1,5 +1,52 @@
 export default {
   name: 'app.Home',
-  component: 'Text',
-  text: '# Das ist eine Beispiel App in North\nSchau dir alle Beispiel apps auf der Seite an!\n\nDeveloped by Timo Sarkar for his school project.'
+  component: 'Form',
+  schema: {
+    component: 'Form',
+    fields: [
+      {
+        name: 'store',
+        component: 'Field'
+      }
+    ]
+  },
+  fields: [
+    {
+      component: 'CollectionField',
+      name: 'contacts',
+      label: 'Contacts',
+      hideLabel: true,
+      // forbidCreate: true,
+      // forbidUpdate: true,
+      // forbidDelete: true,
+      // forbidViewArchived: true,
+      // forbidSearch: true,
+      // forbidSort: true,
+      formFactory: {
+        component: 'Factory',
+        product: {
+          component: 'Form',
+          fields: [
+            {
+              name: 'firstName',
+              component: 'TextField',
+              label: 'First Name',
+              required: true,
+              block: false
+            },
+            {
+              name: 'lastName',
+              component: 'TextField',
+              label: 'Last Name'
+            },
+            {
+              name: 'email',
+              component: 'EmailField',
+              label: 'Email'
+            }
+          ]
+        }
+      },
+    }
+  ]
 };
