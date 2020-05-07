@@ -2,13 +2,13 @@ export default {
   name: 'app.App',
   component: 'App',
   // menuAlwaysTemporary: true,
-  basename: '/north-react', // Root of site is https://redgeoff.github.io/north-react
+  basename: '/north-react', 
   menu: {
     component: 'Menu',
     items: [
       {
         path: '/',
-        label: 'Home',
+        label: 'Erste Applikation',
         content: {
           component: 'app.Home'
         }
@@ -73,7 +73,8 @@ export default {
           component: 'app.ContactNonorth'
         }
       },
-      
+  
+
     ]
   }
 };
