@@ -128,20 +128,7 @@ export class Compiler {
     return MyComponent;
   }
 
-  // Note: this function is VERY slow so we analyze obj.constructor.name instead
-  // isCompiled(obj) {
-  //   if (typeof obj === 'object') {
-  //     let isCompiled = false;
-  //     try {
-  //       obj.constructor();
-  //     } catch (err) {
-  //       isCompiled = true;
-  //     }
-  //     return isCompiled;
-  //   } else {
-  //     return true;
-  //   }
-  // }
+
   isCompiled(obj) {
     if (typeof obj === 'object') {
       return (
@@ -227,14 +214,8 @@ export class Compiler {
   }
 
   registerComponent(name, component) {
-    // Reregistration is now allowed as it allows for things like hot reloading of changed
-    // definitions.
-    //
-    // if (this._components[name]) {
-    //   throw new Error(`component ${name} already exists`);
-    // } else {
     this._components[name] = component;
-    // }
+   
   }
 
   registerComponents(components) {
