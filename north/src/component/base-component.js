@@ -12,13 +12,7 @@ const getNextKey = () => {
   return nextKey++;
 };
 
-// NOTE:
-// - Get and set designed so that easy to add functionality later on set and get, including via
-//   event listeners
-// - The props are placed directly on this object as opposed to onto say a "_props" field. This has
-//   the advantage of making it less verbose to access, e.g. comp._foo instead of comp._props.foo.
-// - We attempted to require all access to all props via get() and set(), but this can cause
-//   infinite recursion, e.g. when a get() calls itself either directly or via some inherited logic.
+
 export default class BaseComponent extends events.EventEmitter {
   _className = 'Component';
 
@@ -163,10 +157,7 @@ export default class BaseComponent extends events.EventEmitter {
   }
 
   _create(props) {
-    // TODO: would it be better if the schema was loaded dynamically and on demand instead of
-    // whenever the component is created? In some ways we already have this the schema exists as
-    // simple objects until it instantiated. The problem with a lazy setting of the schema is how we
-    // would allow schemas to be defined via north.
+  
     this.set({
       schema: this._getBaseComponentSchema()
     });
