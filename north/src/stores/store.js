@@ -1,35 +1,4 @@
-// Timestamps are set in the store as some stores, e.g. those backed by remote databases, may wish
-// to manage the timestamps for better reliability.
-//
-// Structure of doc in a store, e.g.
-//  {
-//     id,
-//     userId,
-//     ...,
-//     fieldValues: {
-//       firstName,
-//       lastName,
-//       ...
-//     }
-//   }
-// In other words, we nest the default fields in the root of the document and then nest the
-// non-default fields in fieldValues. This is done because:
-//   1. There are some properties, like the cursor, which should not be a field as they shouldn't be
-//      displayed to the user. However, these fields need to be associated with the form.
-//   2. It allows for the creation of extra properties in the future without adding them to the form
-//      as default fields
-//   3. Default fields are not included in the fieldValues as this allows the default fields,
-//      especially the id to be at the root of the record and not nested in the fieldValues. We also
-//      don’t want to duplicate these default fields in both the root of the record and in the field
-//      values as this can waste memory when storing the data
-//
-// We use a numeric order attribute to order docs in a set, e.g. allowing for drag-to-order UIs. The
-// downside to this approach, is that moving a doc requires updating the order of all subsequent
-// docs (https://dba.stackexchange.com/q/36875/94046). A previous design used a beforeId, similar to
-// the beforeKey construct in the Mapa, and this only required at most 2 writes to move a doc. The
-// downside; however, was that stores can return data in any order, or there can be race conditions,
-// which result in beforeIds for docs that don't exist. This problematic beforeIds cause a great
-// deal of extra complexity.
+
 
 import UIComponent from '../ui-component';
 import access from '../access';
