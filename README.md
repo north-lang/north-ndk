@@ -50,7 +50,7 @@ The expected use case for North would be frontend development (Web). With this g
 
 [![JetBrains](https://d3nmt5vlzunoa1.cloudfront.net/wp-content/uploads/2015/12/JetBrains_Drive_to_develop.png)](https://www.jetbrains.com/?_ga=2.85138393.1173362852.1588427081-1506939487.1580310207)
 
-[![NPM](https://res.cloudinary.com/practicaldev/image/fetch/s--2FOnSSHP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/7pryn9ls88giuc9m8cau.png)]
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--2FOnSSHP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/7pryn9ls88giuc9m8cau.png" height="350"></img>
 
 **Supporting North by sending your first Pull Request! See [contribution guideline]()**
 
