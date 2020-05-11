@@ -52,6 +52,8 @@ The expected use case for North would be frontend development (Web). With this g
 
 <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--2FOnSSHP--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://thepracticaldev.s3.amazonaws.com/i/7pryn9ls88giuc9m8cau.png" height="350"></img>
 
+<img src="https://lh3.googleusercontent.com/proxy/RYnbAI10ylNRTEmI3_twswEYICV6yMmzhGElsyR7AdiPavX4U1MZ1qpQx7am9Tj-BvV8T9sZ2upQZtetNkh2SDxKoTYV2PDQii-H1X8" height="450"></img>
+
 **Supporting North by sending your first Pull Request! See [contribution guideline]()**
 
 
