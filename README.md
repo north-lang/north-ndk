@@ -18,7 +18,7 @@
 
 The skill of coding in various programming languages is quiet essential to understand the today's world. In order to promote this important component, in my final school project I designed a programming language that enables a high-quality web app to be created from a simple code snippet. This means that no previous knowledge is required when using the North programming language. 
 
-The <a href="">technical documentation</a> clearly explains how to program with North. It also explains how to install and configure the language. It also contains a glossary that explains all the complicated technical terms.
+The <a href="http://north-docs.surge.sh/">technical documentation (German)</a> clearly explains how to program with North. It also explains how to install and configure the language. It also contains a glossary that explains all the complicated technical terms.
 
 > Note: This is a pre-alpha version but it seems to be pretty stable for production readyness.
 
